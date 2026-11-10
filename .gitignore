@@ -1,0 +1,17 @@
+# .NET
+bin/
+obj/
+*.user
+.vs/
+TestResults/
+
+# Front
+node_modules/
+web/dist/
+
+# Divers
+.env
+.DS_Store
+.idea/
+*.log
+__pycache__/

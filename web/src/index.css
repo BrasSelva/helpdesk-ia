@@ -1,0 +1,464 @@
+:root {
+  --bg: #e9edf1;
+  --surface: #ffffff;
+  --ink: #18222e;
+  --ink-soft: #566472;
+  --line: #d3dae1;
+  --accent: #1f5f8b;
+  --accent-ink: #ffffff;
+  --focus: #2f80c0;
+  --pending: #a8741a;
+
+  --p-low: #8fa1b0;
+  --p-medium: #d9a92e;
+  --p-high: #dd6a24;
+  --p-critical: #b3261e;
+  --p-none: transparent;
+
+  --radius-control: 6px;
+  --radius-panel: 10px;
+
+  font-family: 'Public Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink);
+  background: var(--bg);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141a21;
+    --surface: #1c242d;
+    --ink: #e6ebf0;
+    --ink-soft: #9aa8b5;
+    --line: #2d3843;
+    --accent: #4d93c7;
+    --accent-ink: #0d1620;
+    --focus: #7cb6e2;
+    --pending: #e0b25a;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+/* Barre du haut */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  /* Aligné sur la largeur de l'espace de travail. */
+  padding: 14px max(24px, calc((100% - 1280px) / 2 + 24px));
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Le logo reprend les bandes de priorité de la file. */
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--p-critical) 0 25%, var(--p-high) 25% 50%, var(--p-medium) 50% 75%, var(--p-low) 75%);
+}
+
+/* Boutons */
+
+button {
+  cursor: pointer;
+  border-radius: var(--radius-control);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  padding: 8px 14px;
+  font-weight: 500;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+
+button.ghost {
+  background: transparent;
+  border-color: transparent;
+  color: var(--ink-soft);
+}
+
+/* Disposition : la file à gauche, le ticket ouvert à droite. */
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(320px, 1fr);
+  gap: 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .workspace {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px;
+  }
+}
+
+/* File de tickets */
+
+.queue-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.queue-head h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.count {
+  color: var(--ink-soft);
+  font-size: 0.875rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+.field input,
+.field select,
+.field textarea {
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-control);
+  padding: 8px 10px;
+  font-size: 1rem;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field [aria-invalid='true'] {
+  border-color: var(--p-critical);
+}
+
+.field-error {
+  color: var(--p-critical);
+}
+
+.ticket-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+  overflow: hidden;
+}
+
+.ticket-list[aria-busy='true'] {
+  opacity: 0.6;
+}
+
+.ticket-list:empty {
+  display: none;
+}
+
+.ticket-list li + li {
+  border-top: 1px solid var(--line);
+}
+
+/* La bande de gauche porte la priorité : la file se lit d'un coup d'œil. */
+.ticket-row {
+  --strip: var(--p-none);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-align: left;
+  border: 0;
+  border-radius: 0;
+  border-left: 6px solid var(--strip);
+  background: transparent;
+  padding: 12px 16px 12px 14px;
+  font-weight: 400;
+}
+
+.ticket-row:hover {
+  background: color-mix(in srgb, var(--accent) 6%, transparent);
+}
+
+.ticket-row[aria-current='true'] {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+[data-priority='Low'] { --strip: var(--p-low); }
+[data-priority='Medium'] { --strip: var(--p-medium); }
+[data-priority='High'] { --strip: var(--p-high); }
+[data-priority='Critical'] { --strip: var(--p-critical); }
+
+.row-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.row-title {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.row-meta {
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+
+.row-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.tag {
+  font-size: 0.8125rem;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+}
+
+/* « À classer » annonce le travail du modèle de classification (semaine 2). */
+.tag.pending {
+  border-style: dashed;
+  border-color: var(--pending);
+  color: var(--pending);
+  font-weight: 600;
+}
+
+.priority-label {
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+.notice {
+  padding: 12px 14px;
+  border-radius: var(--radius-control);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+  margin-bottom: 12px;
+}
+
+.notice.error {
+  border-color: var(--p-critical);
+  color: var(--p-critical);
+}
+
+/* Panneau de droite */
+
+.panel {
+  position: sticky;
+  top: 24px;
+}
+
+.detail,
+.empty-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-panel);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.detail[data-priority] {
+  border-top: 6px solid var(--strip);
+}
+
+.detail.new-ticket {
+  border-top: 6px solid var(--accent);
+}
+
+.detail h2,
+.empty-panel h2 {
+  font-size: 1.375rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.detail-meta,
+.hint,
+.empty-panel p {
+  color: var(--ink-soft);
+  font-size: 0.9375rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 0;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.facts dt {
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+}
+
+.facts dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.description {
+  white-space: pre-line;
+  max-width: 65ch;
+}
+
+.status-form,
+.new-ticket {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.status-form button,
+.actions {
+  align-self: flex-start;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    position: static;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* Mobile : placé en fin de fichier pour l'emporter sur les règles de base. */
+@media (max-width: 600px) {
+  .topbar {
+    padding: 12px 16px;
+  }
+
+  .ticket-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .row-main {
+    width: 100%;
+  }
+
+  .row-tags {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .facts {
+    grid-template-columns: 1fr 1fr;
+  }
+}

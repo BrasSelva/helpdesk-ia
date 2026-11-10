@@ -1,0 +1,902 @@
+[
+  {
+    "title": "Demande d'accès à Salesforce",
+    "description": "Bonjour,\nJe viens d'arriver dans l'équipe et j'ai besoin d'un accès à Salesforce pour mes missions.",
+    "category": "Account",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Accès créé après validation du manager.",
+    "createdAt": "2026-07-02T04:00:00+00:00"
+  },
+  {
+    "title": "Impossible d'ajouter l'imprimante",
+    "description": "Je n'arrive pas à ajouter l'imprimante du 3e étage sur mon second écran, elle n'apparaît pas dans la liste.\nMerci.",
+    "category": "Printing",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "File d'impression ajoutée via le portail d'impression.",
+    "createdAt": "2026-05-22T14:00:00+00:00"
+  },
+  {
+    "title": "Mails non reçus depuis ce matin",
+    "description": "Bonjour,\nJe ne reçois plus aucun mail externe depuis ce matin, des clients me disent que leurs messages reviennent.\nMerci pour votre aide !",
+    "category": "Messaging",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Règle de transfert erronée supprimée, flux rétabli.",
+    "createdAt": "2026-05-31T11:00:00+00:00"
+  },
+  {
+    "title": "Wi-Fi instable au 3e étage",
+    "description": "Le Wi-Fi coupe toutes les 10 minutes au 3e étage du site de Lyon, c'est pénible pendant les visios.\nCordialement.",
+    "category": "Network",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Borne Wi-Fi redémarrée et canal modifié, plus de coupure signalée.",
+    "createdAt": "2026-07-13T13:00:00+00:00"
+  },
+  {
+    "title": "Lenteur réseau en fin de journée",
+    "description": "Bonjour,\nLe réseau est un peu lent vers 17h quand j'ouvre le logiciel de paie, rien de bloquant mais je préfère le signaler.\nCordialement.",
+    "category": "Network",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Pic de charge lié aux sauvegardes, planification décalée à 20h.",
+    "createdAt": "2026-09-17T23:00:00+00:00"
+  },
+  {
+    "title": "Calendrier partagé non visible",
+    "description": "Hello,\nJe ne vois plus le calendrier partagé de mon équipe dans Outlook depuis la migration.\nMerci d'avance.",
+    "category": "Messaging",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Droits du calendrier réappliqués.",
+    "createdAt": "2026-07-20T00:00:00+00:00"
+  },
+  {
+    "title": "Clavier avec des touches qui ne répondent plus",
+    "description": "Hello,\nPlusieurs touches de mon clavier ne répondent plus, je dois appuyer plusieurs fois.\nC'est urgent.\nMerci.",
+    "category": "Hardware",
+    "priority": "High",
+    "status": "InProgress",
+    "resolution": null,
+    "createdAt": "2026-10-21T10:00:00+00:00"
+  },
+  {
+    "title": "Installation d'un logiciel",
+    "description": "Bonjour,\nJ'ai besoin d'installer un outil de diagramme pour mon projet, je n'ai pas les droits administrateur.",
+    "category": "Software",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Logiciel installé depuis le catalogue d'entreprise.",
+    "createdAt": "2026-05-22T06:00:00+00:00"
+  },
+  {
+    "title": "Changement de nom d'affichage",
+    "description": "Hello,\nMon nom est mal orthographié dans l'annuaire et dans GitLab, pouvez-vous le corriger ?\nCordialement.",
+    "category": "Account",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Annuaire corrigé, synchronisation effectuée.",
+    "createdAt": "2026-07-22T22:00:00+00:00"
+  },
+  {
+    "title": "Le logiciel de paie indisponible pour tout le service",
+    "description": "Le logiciel de paie affiche une erreur 500 pour tous les collègues du site de Lyon, la clôture mensuelle est bloquée.",
+    "category": "Software",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Service applicatif redémarré, incident analysé par l'éditeur.",
+    "createdAt": "2026-08-10T21:00:00+00:00"
+  },
+  {
+    "title": "Clavier avec des touches qui ne répondent plus",
+    "description": "Hello,\nPlusieurs touches de mon clavier ne répondent plus, je dois appuyer plusieurs fois.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Clavier remplacé.",
+    "createdAt": "2026-10-01T03:00:00+00:00"
+  },
+  {
+    "title": "Clavier avec des touches qui ne répondent plus",
+    "description": "Hello,\nPlusieurs touches de mon clavier ne répondent plus, je dois appuyer plusieurs fois.\nMerci.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Clavier remplacé.",
+    "createdAt": "2026-10-04T00:00:00+00:00"
+  },
+  {
+    "title": "Demande de souris ergonomique",
+    "description": "Bonjour,\nSerait-il possible d'avoir une souris verticale ? J'ai des douleurs au poignet en fin de journée.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Souris ergonomique commandée et livrée.",
+    "createdAt": "2026-10-10T07:00:00+00:00"
+  },
+  {
+    "title": "Plus d'accès réseau sur tout le site de Saint-Denis",
+    "description": "Bonjour l'équipe support,\nPersonne n'a internet ni accès aux applications sur le site de Saint-Denis depuis 9h. Toute l'équipe est bloquée.",
+    "category": "Network",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Switch principal tombé en panne, remplacé par l'équipe réseau.",
+    "createdAt": "2026-05-16T13:00:00+00:00"
+  },
+  {
+    "title": "Installation d'un logiciel",
+    "description": "Hello,\nJ'ai besoin d'installer un outil de diagramme pour mon projet, je n'ai pas les droits administrateur.\nMerci d'avance.",
+    "category": "Software",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Logiciel installé depuis le catalogue d'entreprise.",
+    "createdAt": "2026-07-05T15:00:00+00:00"
+  },
+  {
+    "title": "Compte bloqué après plusieurs essais",
+    "description": "Bonjour,\nMon compte est verrouillé après trois mots de passe erronés, je ne peux plus me connecter à le CRM.\nMerci pour votre aide !",
+    "category": "Account",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Compte déverrouillé après vérification d'identité.",
+    "createdAt": "2026-08-18T07:00:00+00:00"
+  },
+  {
+    "title": "Signature de mail à mettre à jour",
+    "description": "Bonjour l'équipe support,\nJe souhaite mettre à jour ma signature avec le nouveau logo, où trouver le modèle ?\nCordialement.",
+    "category": "Messaging",
+    "priority": "Low",
+    "status": "Open",
+    "resolution": null,
+    "createdAt": "2026-10-29T05:00:00+00:00"
+  },
+  {
+    "title": "Boîte mail pleine",
+    "description": "Bonjour à tous,\nJe reçois un message indiquant que ma boîte aux lettres est presque pleine, que dois-je faire ?\nMerci pour votre aide !",
+    "category": "Messaging",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Archivage en ligne activé, quota augmenté.",
+    "createdAt": "2026-09-04T20:00:00+00:00"
+  },
+  {
+    "title": "Licence Salesforce expirée",
+    "description": "Hello,\nSalesforce m'indique que ma licence a expiré et passe en lecture seule.",
+    "category": "Software",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Licence réattribuée depuis la console d'administration.",
+    "createdAt": "2026-05-06T13:00:00+00:00"
+  },
+  {
+    "title": "VPN impossible à connecter",
+    "description": "Depuis ce matin le VPN refuse la connexion depuis chez moi, message « délai dépassé ». Je ne peux pas accéder à le logiciel de paie.\nMerci pour votre aide !",
+    "category": "Network",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Profil VPN réinstallé et certificat renouvelé, connexion rétablie.",
+    "createdAt": "2026-06-24T15:00:00+00:00"
+  },
+  {
+    "title": "Changement de nom d'affichage",
+    "description": "Bonjour à tous,\nMon nom est mal orthographié dans l'annuaire et dans l'intranet, pouvez-vous le corriger ?\nCordialement.",
+    "category": "Account",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Annuaire corrigé, synchronisation effectuée.",
+    "createdAt": "2026-06-30T17:00:00+00:00"
+  },
+  {
+    "title": "Station d'accueil ne charge pas le portable",
+    "description": "Bonjour l'équipe support,\nQuand je branche le portable sur mon PC portable il ne charge pas, mais les écrans fonctionnent.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Firmware de la station mis à jour.",
+    "createdAt": "2026-06-26T20:00:00+00:00"
+  },
+  {
+    "title": "Boîte mail pleine",
+    "description": "Bonjour l'équipe support,\nJe reçois un message indiquant que ma boîte aux lettres est presque pleine, que dois-je faire ?\nCordialement.",
+    "category": "Messaging",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Archivage en ligne activé, quota augmenté.",
+    "createdAt": "2026-08-15T05:00:00+00:00"
+  },
+  {
+    "title": "Mot de passe expiré",
+    "description": "Bonjour l'équipe support,\nOn me demande de changer mon mot de passe mais le nouveau est refusé sans explication.\nC'est urgent.\nMerci.",
+    "category": "Account",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Rappel de la politique de mot de passe (12 caractères, historique), changement effectué.",
+    "createdAt": "2026-09-04T22:00:00+00:00"
+  },
+  {
+    "title": "Impossible d'ajouter l'imprimante",
+    "description": "Je n'arrive pas à ajouter l'imprimante du bâtiment B sur mon second écran, elle n'apparaît pas dans la liste.\nMerci.",
+    "category": "Printing",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "File d'impression ajoutée via le portail d'impression.",
+    "createdAt": "2026-09-09T15:00:00+00:00"
+  },
+  {
+    "title": "Licence l'intranet expirée",
+    "description": "Bonjour à tous,\nL'intranet m'indique que ma licence a expiré et passe en lecture seule.\nCordialement.",
+    "category": "Software",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Licence réattribuée depuis la console d'administration.",
+    "createdAt": "2026-08-06T04:00:00+00:00"
+  },
+  {
+    "title": "Plus d'accès réseau sur tout le site de Lille",
+    "description": "Hello,\nPersonne n'a internet ni accès aux applications sur le site de Lille depuis 9h. Toute l'équipe est bloquée.\nCordialement.",
+    "category": "Network",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Switch principal tombé en panne, remplacé par l'équipe réseau.",
+    "createdAt": "2026-05-21T22:00:00+00:00"
+  },
+  {
+    "title": "Lecteur réseau partagé inaccessible",
+    "description": "Bonjour à tous,\nLe lecteur partagé de mon service n'apparaît plus sur mon casque, je n'ai plus accès à mes dossiers.\nMerci pour votre aide !",
+    "category": "Network",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Mappage du lecteur recréé par script de connexion.",
+    "createdAt": "2026-06-23T06:00:00+00:00"
+  },
+  {
+    "title": "Wi-Fi instable au 3e étage",
+    "description": "Bonjour,\nLe Wi-Fi coupe toutes les 10 minutes au 3e étage du site de Saint-Denis, c'est pénible pendant les visios.",
+    "category": "Network",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Borne Wi-Fi redémarrée et canal modifié, plus de coupure signalée.",
+    "createdAt": "2026-06-09T23:00:00+00:00"
+  },
+  {
+    "title": "Demande de souris ergonomique",
+    "description": "Bonjour,\nSerait-il possible d'avoir une souris verticale ? J'ai des douleurs au poignet en fin de journée.\nCordialement.",
+    "category": "Hardware",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Souris ergonomique commandée et livrée.",
+    "createdAt": "2026-05-22T01:00:00+00:00"
+  },
+  {
+    "title": "Clavier avec des touches qui ne répondent plus",
+    "description": "Bonjour l'équipe support,\nPlusieurs touches de mon clavier ne répondent plus, je dois appuyer plusieurs fois.\nCordialement.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Clavier remplacé.",
+    "createdAt": "2026-10-10T17:00:00+00:00"
+  },
+  {
+    "title": "L'intranet indisponible pour tout le service",
+    "description": "Bonjour à tous,\nL'intranet affiche une erreur 500 pour tous les collègues du site de Bordeaux, la clôture mensuelle est bloquée.\nMerci d'avance.",
+    "category": "Software",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Service applicatif redémarré, incident analysé par l'éditeur.",
+    "createdAt": "2026-09-06T13:00:00+00:00"
+  },
+  {
+    "title": "Imprimante qui ne recto-verso pas",
+    "description": "Bonjour à tous,\nL'imprimante du 2e étage n'imprime plus en recto-verso, ce n'est pas urgent.\nMerci.",
+    "category": "Printing",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Pilote réinstallé avec l'option recto-verso activée.",
+    "createdAt": "2026-08-01T03:00:00+00:00"
+  },
+  {
+    "title": "Boîte mail pleine",
+    "description": "Je reçois un message indiquant que ma boîte aux lettres est presque pleine, que dois-je faire ?\nMerci.",
+    "category": "Messaging",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Archivage en ligne activé, quota augmenté.",
+    "createdAt": "2026-08-30T21:00:00+00:00"
+  },
+  {
+    "title": "Impossible d'ajouter l'imprimante",
+    "description": "Je n'arrive pas à ajouter l'imprimante du 2e étage sur mon poste fixe, elle n'apparaît pas dans la liste.\nJe suis complètement bloqué.\nMerci pour votre aide !",
+    "category": "Printing",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "File d'impression ajoutée via le portail d'impression.",
+    "createdAt": "2026-08-02T10:00:00+00:00"
+  },
+  {
+    "title": "Écran qui scintille",
+    "description": "Hello,\nMon casque scintille par moments, surtout le matin, c'est fatigant pour les yeux.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Câble DisplayPort remplacé.",
+    "createdAt": "2026-06-25T09:00:00+00:00"
+  },
+  {
+    "title": "Mail suspect reçu par plusieurs collègues",
+    "description": "Plusieurs personnes du site de Saint-Denis ont reçu un mail demandant de saisir leurs identifiants. Un collègue a cliqué.\nCordialement.",
+    "category": "Messaging",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Mail supprimé des boîtes, mot de passe du collègue réinitialisé, incident déclaré à la sécurité.",
+    "createdAt": "2026-06-23T22:00:00+00:00"
+  },
+  {
+    "title": "Jira plante à l'ouverture",
+    "description": "Jira se ferme tout seul dès que je l'ouvre, impossible de travailler depuis la mise à jour d'hier.\nMerci d'avance.",
+    "category": "Software",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Cache applicatif vidé et version corrigée déployée.",
+    "createdAt": "2026-09-05T01:00:00+00:00"
+  },
+  {
+    "title": "Impossible d'ajouter l'imprimante",
+    "description": "Je n'arrive pas à ajouter l'imprimante du bâtiment B sur ma station d'accueil, elle n'apparaît pas dans la liste.\nMerci d'avance.",
+    "category": "Printing",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "File d'impression ajoutée via le portail d'impression.",
+    "createdAt": "2026-06-14T08:00:00+00:00"
+  },
+  {
+    "title": "Écran qui scintille",
+    "description": "Hello,\nMa station d'accueil scintille par moments, surtout le matin, c'est fatigant pour les yeux.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Câble DisplayPort remplacé.",
+    "createdAt": "2026-08-04T23:00:00+00:00"
+  },
+  {
+    "title": "Imprimante qui ne recto-verso pas",
+    "description": "L'imprimante du 3e étage n'imprime plus en recto-verso, ce n'est pas urgent.\nMerci pour votre aide !",
+    "category": "Printing",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Pilote réinstallé avec l'option recto-verso activée.",
+    "createdAt": "2026-06-18T12:00:00+00:00"
+  },
+  {
+    "title": "Salesforce plante à l'ouverture",
+    "description": "Bonjour,\nSalesforce se ferme tout seul dès que je l'ouvre, impossible de travailler depuis la mise à jour d'hier.\nMerci pour votre aide !",
+    "category": "Software",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Cache applicatif vidé et version corrigée déployée.",
+    "createdAt": "2026-08-10T19:00:00+00:00"
+  },
+  {
+    "title": "Station d'accueil ne charge pas le portable",
+    "description": "Bonjour,\nQuand je branche le portable sur mon second écran il ne charge pas, mais les écrans fonctionnent.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Firmware de la station mis à jour.",
+    "createdAt": "2026-05-05T15:00:00+00:00"
+  },
+  {
+    "title": "L'intranet indisponible pour tout le service",
+    "description": "Bonjour l'équipe support,\nL'intranet affiche une erreur 500 pour tous les collègues du site de Nantes, la clôture mensuelle est bloquée.\nCordialement.",
+    "category": "Software",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Service applicatif redémarré, incident analysé par l'éditeur.",
+    "createdAt": "2026-05-17T09:00:00+00:00"
+  },
+  {
+    "title": "Plus d'accès réseau sur tout le site de Nantes",
+    "description": "Bonjour,\nPersonne n'a internet ni accès aux applications sur le site de Nantes depuis 9h. Toute l'équipe est bloquée.\nMerci d'avance.",
+    "category": "Network",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Switch principal tombé en panne, remplacé par l'équipe réseau.",
+    "createdAt": "2026-06-24T19:00:00+00:00"
+  },
+  {
+    "title": "Demande d'accès à le CRM",
+    "description": "Bonjour l'équipe support,\nJe viens d'arriver dans l'équipe et j'ai besoin d'un accès à le CRM pour mes missions.\nCordialement.",
+    "category": "Account",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Accès créé après validation du manager.",
+    "createdAt": "2026-09-22T15:00:00+00:00"
+  },
+  {
+    "title": "PC portable ne démarre plus",
+    "description": "Hello,\nMon second écran ne s'allume plus du tout malgré le chargeur branché. J'ai une réunion client cet après-midi.\nMerci pour votre aide !",
+    "category": "Hardware",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Batterie défectueuse, poste de prêt fourni puis réparation sous garantie.",
+    "createdAt": "2026-10-07T05:00:00+00:00"
+  },
+  {
+    "title": "Authentification MFA ne fonctionne plus",
+    "description": "Bonjour l'équipe support,\nJ'ai changé de téléphone et je ne reçois plus les codes de double authentification, je suis bloqué.",
+    "category": "Account",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Méthode MFA réinitialisée et nouvel appareil enregistré.",
+    "createdAt": "2026-06-20T06:00:00+00:00"
+  },
+  {
+    "title": "Signature de mail à mettre à jour",
+    "description": "Bonjour l'équipe support,\nJe souhaite mettre à jour ma signature avec le nouveau logo, où trouver le modèle ?\nJe suis complètement bloqué.",
+    "category": "Messaging",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Lien vers le modèle de signature envoyé.",
+    "createdAt": "2026-05-31T11:00:00+00:00"
+  },
+  {
+    "title": "Compte bloqué après plusieurs essais",
+    "description": "Bonjour,\nMon compte est verrouillé après trois mots de passe erronés, je ne peux plus me connecter à le logiciel de paie.\nCordialement.",
+    "category": "Account",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Compte déverrouillé après vérification d'identité.",
+    "createdAt": "2026-10-02T04:00:00+00:00"
+  },
+  {
+    "title": "Station d'accueil ne charge pas le portable",
+    "description": "Hello,\nQuand je branche le portable sur mon second écran il ne charge pas, mais les écrans fonctionnent.\nJe suis complètement bloqué.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Firmware de la station mis à jour.",
+    "createdAt": "2026-08-22T03:00:00+00:00"
+  },
+  {
+    "title": "Bourrage papier récurrent",
+    "description": "Bonjour à tous,\nL'imprimante du 3e étage à Nantes fait des bourrages papier presque à chaque impression.\nMerci.",
+    "category": "Printing",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Intervention du prestataire, rouleau d'entraînement changé.",
+    "createdAt": "2026-09-08T05:00:00+00:00"
+  },
+  {
+    "title": "Salesforce indisponible pour tout le service",
+    "description": "Bonjour l'équipe support,\nSalesforce affiche une erreur 500 pour tous les collègues du site de Lyon, la clôture mensuelle est bloquée.",
+    "category": "Software",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Service applicatif redémarré, incident analysé par l'éditeur.",
+    "createdAt": "2026-06-13T08:00:00+00:00"
+  },
+  {
+    "title": "Écran qui scintille",
+    "description": "Ma station d'accueil scintille par moments, surtout le matin, c'est fatigant pour les yeux.\nCordialement.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Câble DisplayPort remplacé.",
+    "createdAt": "2026-06-22T00:00:00+00:00"
+  },
+  {
+    "title": "Signature de mail à mettre à jour",
+    "description": "Bonjour l'équipe support,\nJe souhaite mettre à jour ma signature avec le nouveau logo, où trouver le modèle ?\nCordialement.",
+    "category": "Messaging",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Lien vers le modèle de signature envoyé.",
+    "createdAt": "2026-06-04T22:00:00+00:00"
+  },
+  {
+    "title": "Mise à jour Windows en attente",
+    "description": "Hello,\nUne mise à jour Windows me demande de redémarrer depuis plusieurs jours, est-ce que je peux la reporter ?\nMerci d'avance.",
+    "category": "Software",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Mise à jour installée lors d'un redémarrage planifié.",
+    "createdAt": "2026-06-11T19:00:00+00:00"
+  },
+  {
+    "title": "Mails non reçus depuis ce matin",
+    "description": "Je ne reçois plus aucun mail externe depuis ce matin, des clients me disent que leurs messages reviennent.\nMerci.",
+    "category": "Messaging",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Règle de transfert erronée supprimée, flux rétabli.",
+    "createdAt": "2026-08-12T04:00:00+00:00"
+  },
+  {
+    "title": "Imprimante qui ne recto-verso pas",
+    "description": "Bonjour,\nL'imprimante du rez-de-chaussée n'imprime plus en recto-verso, ce n'est pas urgent.\nMerci.",
+    "category": "Printing",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Pilote réinstallé avec l'option recto-verso activée.",
+    "createdAt": "2026-08-17T10:00:00+00:00"
+  },
+  {
+    "title": "Clavier avec des touches qui ne répondent plus",
+    "description": "Bonjour,\nPlusieurs touches de mon clavier ne répondent plus, je dois appuyer plusieurs fois.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Clavier remplacé.",
+    "createdAt": "2026-09-08T02:00:00+00:00"
+  },
+  {
+    "title": "Écran qui scintille",
+    "description": "Hello,\nMon second écran scintille par moments, surtout le matin, c'est fatigant pour les yeux.\nCordialement.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Câble DisplayPort remplacé.",
+    "createdAt": "2026-07-21T10:00:00+00:00"
+  },
+  {
+    "title": "Mails non reçus depuis ce matin",
+    "description": "Bonjour,\nJe ne reçois plus aucun mail externe depuis ce matin, des clients me disent que leurs messages reviennent.\nMerci pour votre aide !",
+    "category": "Messaging",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Règle de transfert erronée supprimée, flux rétabli.",
+    "createdAt": "2026-05-11T19:00:00+00:00"
+  },
+  {
+    "title": "VPN impossible à connecter",
+    "description": "Bonjour l'équipe support,\nDepuis ce matin le VPN refuse la connexion depuis chez moi, message « délai dépassé ». Je ne peux pas accéder à Teams.\nMerci.",
+    "category": "Network",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Profil VPN réinstallé et certificat renouvelé, connexion rétablie.",
+    "createdAt": "2026-06-02T02:00:00+00:00"
+  },
+  {
+    "title": "Demande d'accès à le CRM",
+    "description": "Bonjour,\nJe viens d'arriver dans l'équipe et j'ai besoin d'un accès à le CRM pour mes missions.\nMerci pour votre aide !",
+    "category": "Account",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Accès créé après validation du manager.",
+    "createdAt": "2026-05-11T23:00:00+00:00"
+  },
+  {
+    "title": "Calendrier partagé non visible",
+    "description": "Hello,\nJe ne vois plus le calendrier partagé de mon équipe dans Outlook depuis la migration.\nMerci d'avance.",
+    "category": "Messaging",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Droits du calendrier réappliqués.",
+    "createdAt": "2026-07-20T23:00:00+00:00"
+  },
+  {
+    "title": "Bourrage papier récurrent",
+    "description": "Bonjour,\nL'imprimante du bâtiment B à le siège fait des bourrages papier presque à chaque impression.\nCordialement.",
+    "category": "Printing",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Intervention du prestataire, rouleau d'entraînement changé.",
+    "createdAt": "2026-08-10T23:00:00+00:00"
+  },
+  {
+    "title": "Mot de passe expiré",
+    "description": "Bonjour,\nOn me demande de changer mon mot de passe mais le nouveau est refusé sans explication.",
+    "category": "Account",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Rappel de la politique de mot de passe (12 caractères, historique), changement effectué.",
+    "createdAt": "2026-07-03T04:00:00+00:00"
+  },
+  {
+    "title": "Clavier avec des touches qui ne répondent plus",
+    "description": "Bonjour,\nPlusieurs touches de mon clavier ne répondent plus, je dois appuyer plusieurs fois.\nMerci.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Clavier remplacé.",
+    "createdAt": "2026-10-29T19:00:00+00:00"
+  },
+  {
+    "title": "Signature de mail à mettre à jour",
+    "description": "Bonjour l'équipe support,\nJe souhaite mettre à jour ma signature avec le nouveau logo, où trouver le modèle ?",
+    "category": "Messaging",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Lien vers le modèle de signature envoyé.",
+    "createdAt": "2026-07-13T23:00:00+00:00"
+  },
+  {
+    "title": "Wi-Fi instable au 2e étage",
+    "description": "Le Wi-Fi coupe toutes les 10 minutes au 2e étage du site de Lille, c'est pénible pendant les visios.\nMerci.",
+    "category": "Network",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Borne Wi-Fi redémarrée et canal modifié, plus de coupure signalée.",
+    "createdAt": "2026-10-16T12:00:00+00:00"
+  },
+  {
+    "title": "L'intranet indisponible pour tout le service",
+    "description": "L'intranet affiche une erreur 500 pour tous les collègues du site de Bordeaux, la clôture mensuelle est bloquée.\nMerci d'avance.",
+    "category": "Software",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Service applicatif redémarré, incident analysé par l'éditeur.",
+    "createdAt": "2026-09-23T03:00:00+00:00"
+  },
+  {
+    "title": "Licence Excel expirée",
+    "description": "Excel m'indique que ma licence a expiré et passe en lecture seule.",
+    "category": "Software",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Licence réattribuée depuis la console d'administration.",
+    "createdAt": "2026-07-12T01:00:00+00:00"
+  },
+  {
+    "title": "Mails non reçus depuis ce matin",
+    "description": "Bonjour l'équipe support,\nJe ne reçois plus aucun mail externe depuis ce matin, des clients me disent que leurs messages reviennent.\nMerci d'avance.",
+    "category": "Messaging",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Règle de transfert erronée supprimée, flux rétabli.",
+    "createdAt": "2026-06-02T09:00:00+00:00"
+  },
+  {
+    "title": "Changement de nom d'affichage",
+    "description": "Bonjour l'équipe support,\nMon nom est mal orthographié dans l'annuaire et dans Jira, pouvez-vous le corriger ?\nMerci de traiter rapidement.",
+    "category": "Account",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Annuaire corrigé, synchronisation effectuée.",
+    "createdAt": "2026-07-07T19:00:00+00:00"
+  },
+  {
+    "title": "Lenteur réseau en fin de journée",
+    "description": "Le réseau est un peu lent vers 17h quand j'ouvre Salesforce, rien de bloquant mais je préfère le signaler.\nCordialement.",
+    "category": "Network",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Pic de charge lié aux sauvegardes, planification décalée à 20h.",
+    "createdAt": "2026-09-08T22:00:00+00:00"
+  },
+  {
+    "title": "Impossible d'ajouter l'imprimante",
+    "description": "Bonjour l'équipe support,\nJe n'arrive pas à ajouter l'imprimante du rez-de-chaussée sur mon casque, elle n'apparaît pas dans la liste.\nMerci.",
+    "category": "Printing",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "File d'impression ajoutée via le portail d'impression.",
+    "createdAt": "2026-06-29T15:00:00+00:00"
+  },
+  {
+    "title": "Compte bloqué après plusieurs essais",
+    "description": "Bonjour à tous,\nMon compte est verrouillé après trois mots de passe erronés, je ne peux plus me connecter à le logiciel de paie.\nMerci pour votre aide !",
+    "category": "Account",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Compte déverrouillé après vérification d'identité.",
+    "createdAt": "2026-06-04T10:00:00+00:00"
+  },
+  {
+    "title": "Écran qui scintille",
+    "description": "Bonjour à tous,\nMon second écran scintille par moments, surtout le matin, c'est fatigant pour les yeux.",
+    "category": "Hardware",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Câble DisplayPort remplacé.",
+    "createdAt": "2026-10-16T07:00:00+00:00"
+  },
+  {
+    "title": "Signature de mail à mettre à jour",
+    "description": "Je souhaite mettre à jour ma signature avec le nouveau logo, où trouver le modèle ?\nMerci.",
+    "category": "Messaging",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Lien vers le modèle de signature envoyé.",
+    "createdAt": "2026-06-20T08:00:00+00:00"
+  },
+  {
+    "title": "Compte bloqué après plusieurs essais",
+    "description": "Mon compte est verrouillé après trois mots de passe erronés, je ne peux plus me connecter à le logiciel de paie.\nMerci pour votre aide !",
+    "category": "Account",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Compte déverrouillé après vérification d'identité.",
+    "createdAt": "2026-07-07T07:00:00+00:00"
+  },
+  {
+    "title": "Signature de mail à mettre à jour",
+    "description": "Bonjour l'équipe support,\nJe souhaite mettre à jour ma signature avec le nouveau logo, où trouver le modèle ?\nMerci.",
+    "category": "Messaging",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Lien vers le modèle de signature envoyé.",
+    "createdAt": "2026-09-19T14:00:00+00:00"
+  },
+  {
+    "title": "Bourrage papier récurrent",
+    "description": "Bonjour à tous,\nL'imprimante du 3e étage à Bordeaux fait des bourrages papier presque à chaque impression.\nMerci pour votre aide !",
+    "category": "Printing",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Intervention du prestataire, rouleau d'entraînement changé.",
+    "createdAt": "2026-10-22T08:00:00+00:00"
+  },
+  {
+    "title": "Mail suspect reçu par plusieurs collègues",
+    "description": "Bonjour,\nPlusieurs personnes du site de Bordeaux ont reçu un mail demandant de saisir leurs identifiants. Un collègue a cliqué.\nCordialement.",
+    "category": "Messaging",
+    "priority": "Critical",
+    "status": "InProgress",
+    "resolution": null,
+    "createdAt": "2026-10-19T16:00:00+00:00"
+  },
+  {
+    "title": "PC portable ne démarre plus",
+    "description": "Bonjour,\nMon PC portable ne s'allume plus du tout malgré le chargeur branché. J'ai une réunion client cet après-midi.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Batterie défectueuse, poste de prêt fourni puis réparation sous garantie.",
+    "createdAt": "2026-09-23T19:00:00+00:00"
+  },
+  {
+    "title": "Compte bloqué après plusieurs essais",
+    "description": "Bonjour,\nMon compte est verrouillé après trois mots de passe erronés, je ne peux plus me connecter à Jira.\nMerci pour votre aide !",
+    "category": "Account",
+    "priority": "High",
+    "status": "InProgress",
+    "resolution": null,
+    "createdAt": "2026-10-26T14:00:00+00:00"
+  },
+  {
+    "title": "GitLab indisponible pour tout le service",
+    "description": "GitLab affiche une erreur 500 pour tous les collègues du site de Saint-Denis, la clôture mensuelle est bloquée.",
+    "category": "Software",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Service applicatif redémarré, incident analysé par l'éditeur.",
+    "createdAt": "2026-05-19T06:00:00+00:00"
+  },
+  {
+    "title": "PC portable ne démarre plus",
+    "description": "Bonjour,\nMon casque ne s'allume plus du tout malgré le chargeur branché. J'ai une réunion client cet après-midi.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Batterie défectueuse, poste de prêt fourni puis réparation sous garantie.",
+    "createdAt": "2026-05-29T08:00:00+00:00"
+  },
+  {
+    "title": "Demande d'accès à Salesforce",
+    "description": "Je viens d'arriver dans l'équipe et j'ai besoin d'un accès à Salesforce pour mes missions.\nCordialement.",
+    "category": "Account",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Accès créé après validation du manager.",
+    "createdAt": "2026-08-17T14:00:00+00:00"
+  },
+  {
+    "title": "PC portable ne démarre plus",
+    "description": "Bonjour,\nMon casque ne s'allume plus du tout malgré le chargeur branché. J'ai une réunion client cet après-midi.\nMerci d'avance.",
+    "category": "Hardware",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Batterie défectueuse, poste de prêt fourni puis réparation sous garantie.",
+    "createdAt": "2026-07-10T23:00:00+00:00"
+  },
+  {
+    "title": "Signature de mail à mettre à jour",
+    "description": "Bonjour l'équipe support,\nJe souhaite mettre à jour ma signature avec le nouveau logo, où trouver le modèle ?\nMerci pour votre aide !",
+    "category": "Messaging",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Lien vers le modèle de signature envoyé.",
+    "createdAt": "2026-10-15T16:00:00+00:00"
+  },
+  {
+    "title": "Plus d'accès réseau sur tout le site de Bordeaux",
+    "description": "Personne n'a internet ni accès aux applications sur le site de Bordeaux depuis 9h. Toute l'équipe est bloquée.\nMerci.",
+    "category": "Network",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Switch principal tombé en panne, remplacé par l'équipe réseau.",
+    "createdAt": "2026-07-01T18:00:00+00:00"
+  },
+  {
+    "title": "Changement de nom d'affichage",
+    "description": "Mon nom est mal orthographié dans l'annuaire et dans SAP, pouvez-vous le corriger ?\nCordialement.",
+    "category": "Account",
+    "priority": "Low",
+    "status": "Resolved",
+    "resolution": "Annuaire corrigé, synchronisation effectuée.",
+    "createdAt": "2026-07-11T22:00:00+00:00"
+  },
+  {
+    "title": "Plus d'accès réseau sur tout le site de Saint-Denis",
+    "description": "Hello,\nPersonne n'a internet ni accès aux applications sur le site de Saint-Denis depuis 9h. Toute l'équipe est bloquée.",
+    "category": "Network",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Switch principal tombé en panne, remplacé par l'équipe réseau.",
+    "createdAt": "2026-06-29T03:00:00+00:00"
+  },
+  {
+    "title": "Authentification MFA ne fonctionne plus",
+    "description": "Bonjour à tous,\nJ'ai changé de téléphone et je ne reçois plus les codes de double authentification, je suis bloqué.\nMerci pour votre aide !",
+    "category": "Account",
+    "priority": "High",
+    "status": "Open",
+    "resolution": null,
+    "createdAt": "2026-10-28T19:00:00+00:00"
+  },
+  {
+    "title": "Mail suspect reçu par plusieurs collègues",
+    "description": "Bonjour,\nPlusieurs personnes du site de Lyon ont reçu un mail demandant de saisir leurs identifiants. Un collègue a cliqué.",
+    "category": "Messaging",
+    "priority": "Critical",
+    "status": "Resolved",
+    "resolution": "Mail supprimé des boîtes, mot de passe du collègue réinitialisé, incident déclaré à la sécurité.",
+    "createdAt": "2026-08-03T05:00:00+00:00"
+  },
+  {
+    "title": "Le logiciel de paie indisponible pour tout le service",
+    "description": "Bonjour l'équipe support,\nLe logiciel de paie affiche une erreur 500 pour tous les collègues du site de le siège, la clôture mensuelle est bloquée.\nMerci.",
+    "category": "Software",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Service applicatif redémarré, incident analysé par l'éditeur.",
+    "createdAt": "2026-09-04T15:00:00+00:00"
+  },
+  {
+    "title": "GitLab plante à l'ouverture",
+    "description": "Bonjour,\nGitLab se ferme tout seul dès que je l'ouvre, impossible de travailler depuis la mise à jour d'hier.\nCordialement.",
+    "category": "Software",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Cache applicatif vidé et version corrigée déployée.",
+    "createdAt": "2026-06-09T06:00:00+00:00"
+  },
+  {
+    "title": "Lecteur réseau partagé inaccessible",
+    "description": "Le lecteur partagé de mon service n'apparaît plus sur mon second écran, je n'ai plus accès à mes dossiers.\nMerci d'avance.",
+    "category": "Network",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Mappage du lecteur recréé par script de connexion.",
+    "createdAt": "2026-10-20T02:00:00+00:00"
+  },
+  {
+    "title": "Impression des contrats bloquée",
+    "description": "Bonjour,\nPlus aucune impression ne sort depuis ce matin à Saint-Denis, nous devons imprimer des contrats à signer aujourd'hui.\nMerci pour votre aide !",
+    "category": "Printing",
+    "priority": "High",
+    "status": "Resolved",
+    "resolution": "Serveur d'impression relancé, file débloquée.",
+    "createdAt": "2026-06-04T16:00:00+00:00"
+  },
+  {
+    "title": "Lenteur réseau en fin de journée",
+    "description": "Bonjour l'équipe support,\nLe réseau est un peu lent vers 17h quand j'ouvre Teams, rien de bloquant mais je préfère le signaler.\nJe suis complètement bloqué.",
+    "category": "Network",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "Pic de charge lié aux sauvegardes, planification décalée à 20h.",
+    "createdAt": "2026-07-21T04:00:00+00:00"
+  },
+  {
+    "title": "Impossible d'ajouter l'imprimante",
+    "description": "Je n'arrive pas à ajouter l'imprimante du bâtiment B sur mon PC portable, elle n'apparaît pas dans la liste.\nCordialement.",
+    "category": "Printing",
+    "priority": "Medium",
+    "status": "Resolved",
+    "resolution": "File d'impression ajoutée via le portail d'impression.",
+    "createdAt": "2026-07-25T19:00:00+00:00"
+  }
+]
