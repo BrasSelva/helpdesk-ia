@@ -1,5 +1,8 @@
 namespace Helpdesk.Api.Domain;
 
+using System.Text.Json.Serialization;
+
+[JsonConverter(typeof(JsonStringEnumConverter<TicketCategory>))]
 public enum TicketCategory
 {
     Network,
@@ -10,6 +13,7 @@ public enum TicketCategory
     Messaging
 }
 
+[JsonConverter(typeof(JsonStringEnumConverter<TicketPriority>))]
 public enum TicketPriority
 {
     Low,
@@ -18,6 +22,7 @@ public enum TicketPriority
     Critical
 }
 
+[JsonConverter(typeof(JsonStringEnumConverter<TicketStatus>))]
 public enum TicketStatus
 {
     Open,

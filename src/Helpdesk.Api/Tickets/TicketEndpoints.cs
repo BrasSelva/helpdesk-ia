@@ -1,3 +1,4 @@
+using Helpdesk.Api.Classification;
 using Helpdesk.Api.Data;
 using Helpdesk.Api.Domain;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -72,6 +73,7 @@ public static class TicketEndpoints
     private static async Task<Results<Created<TicketDto>, ValidationProblem>> CreateTicket(
         CreateTicketRequest request,
         HelpdeskDbContext db,
+        ITicketClassifier classifier,
         TimeProvider clock,
         CancellationToken ct)
     {
@@ -88,7 +90,9 @@ public static class TicketEndpoints
             Status = TicketStatus.Open,
             CreatedAt = clock.GetUtcNow()
         };
-
+        var classification = await classifier.ClassifyAsync(ticket.Title, ticket.Description, ct);
+        ticket.Category = classification?.Category;
+        ticket.Priority = classification?.Priority;
         db.Tickets.Add(ticket);
         await db.SaveChangesAsync(ct);
 

@@ -1,7 +1,9 @@
 using System.Text.Json.Serialization;
+using Helpdesk.Api.Classification;
 using Helpdesk.Api.Data;
 using Helpdesk.Api.Tickets;
 using Microsoft.EntityFrameworkCore;
+using OllamaSharp;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,11 @@ builder.Services.AddDbContext<HelpdeskDbContext>(options =>
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("Helpdesk"),
         npgsql => npgsql.EnableRetryOnFailure(maxRetryCount: 5)));
+
+var ollamaEndpoint = new Uri(builder.Configuration["Ai:Endpoint"] ?? "http://localhost:11434");
+var ollamaModel = builder.Configuration["Ai:Model"] ?? "qwen3: 8b";
+builder.Services.AddChatClient(new OllamaApiClient(ollamaEndpoint, ollamaModel));
+builder.Services.AddScoped<ITicketClassifier, LlmTicketClassifier>();
 
 var frontOrigins = builder.Configuration.GetSection("Cors:Origins").Get<string[]>() ?? ["http://localhost:5173"];
 builder.Services.AddCors(options => options.AddPolicy("front", policy =>
