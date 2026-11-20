@@ -335,6 +335,14 @@ button.ghost {
   font-size: 0.9375rem;
   margin-bottom: 12px;
 }
+.notice.classify {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-style: dashed;
+    border-color: var(--pending);
+}
 
 .notice.error {
   border-color: var(--p-critical);

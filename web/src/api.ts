@@ -68,6 +68,10 @@ export function createTicket(title: string, description: string): Promise<Ticket
   return request('/api/tickets', { method: 'POST', body: JSON.stringify({ title, description }) })
 }
 
+export function classifyTicket(id: number): Promise<Ticket> {
+    return request(`/api/tickets/${id}/classify`, {method: 'POST'})
+} 
+
 export function updateStatus(id: number, status: TicketStatus, resolution: string): Promise<Ticket> {
   return request(`/api/tickets/${id}/status`, {
     method: 'PATCH',

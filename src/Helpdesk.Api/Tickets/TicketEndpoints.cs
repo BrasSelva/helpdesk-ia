@@ -18,6 +18,7 @@ public static class TicketEndpoints
         group.MapGet("/{id:int}", GetTicket).WithName("GetTicket");
         group.MapPost("/", CreateTicket).WithName("CreateTicket");
         group.MapPatch("/{id:int}/status", UpdateStatus).WithName("UpdateTicketStatus");
+        group.MapPost("/{id:int}/classify", ClassifyTicket).WithName("ClassifyTicket");
 
         return group;
     }
@@ -119,6 +120,32 @@ public static class TicketEndpoints
 
         ticket.Status = request.Status;
         ticket.Resolution = string.IsNullOrWhiteSpace(request.Resolution) ? ticket.Resolution : request.Resolution.Trim();
+        await db.SaveChangesAsync(ct);
+
+        return TypedResults.Ok(TicketDto.From(ticket));
+    }
+
+    private static async Task<Results<Ok<TicketDto>, NotFound, ProblemHttpResult>> ClassifyTicket(
+        int id,
+        HelpdeskDbContext db,
+        ITicketClassifier classifier,
+        CancellationToken ct)
+    {
+        var ticket = await db.Tickets.FirstOrDefaultAsync(t => t.Id == id, ct);
+        if (ticket is null)
+        {
+            return TypedResults.NotFound();
+        }
+
+        var classification = await classifier.ClassifyAsync(ticket.Title, ticket.Description, ct);
+        if (classification is null)
+        {
+            return TypedResults.Problem(
+                title: "Le modèle de classification ne répond pas. Vérifie qu'Ollama est lancé.",
+                statusCode: StatusCodes.Status503ServiceUnavailable);
+        }
+        ticket.Category = classification.Category;
+        ticket.Priority = classification.Priority;
         await db.SaveChangesAsync(ct);
 
         return TypedResults.Ok(TicketDto.From(ticket));
